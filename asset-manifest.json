@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lambda-puppeteer-react-test/static/css/main.073c9b0a.css",
+    "main.js": "/lambda-puppeteer-react-test/static/js/main.c7c76bd5.js",
+    "static/js/787.7a327c31.chunk.js": "/lambda-puppeteer-react-test/static/js/787.7a327c31.chunk.js",
+    "index.html": "/lambda-puppeteer-react-test/index.html",
+    "main.073c9b0a.css.map": "/lambda-puppeteer-react-test/static/css/main.073c9b0a.css.map",
+    "main.c7c76bd5.js.map": "/lambda-puppeteer-react-test/static/js/main.c7c76bd5.js.map",
+    "787.7a327c31.chunk.js.map": "/lambda-puppeteer-react-test/static/js/787.7a327c31.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.c7c76bd5.js"
+  ]
+}
