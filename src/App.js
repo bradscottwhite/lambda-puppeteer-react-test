@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 
-const url = 'https://l7nxxht4fvuqa25dzwfg5wsc6u0zhvkv.lambda-url.us-east-1.on.aws/';
+const url = 'https://rmozdxdjnsenaqqspzu2ykwxea0fwjvu.lambda-url.us-east-1.on.aws/';
 
 const App = () => {
   const [ input, setInput ] = useState('');
