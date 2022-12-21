@@ -1,22 +1,25 @@
 import { useState } from 'react';
+
+import axios from 'axios';
+
 import './App.css';
 
-const url = 'https://rmozdxdjnsenaqqspzu2ykwxea0fwjvu.lambda-url.us-east-1.on.aws/';
+const url = 'https://a5n2yicsb4.execute-api.us-east-1.amazonaws.com/staging';
 
 const App = () => {
   const [ input, setInput ] = useState('');
   const [ title, setTitle ] = useState('');
 
-  const fetchTitle = async () => {
+  const fetchTitle = () => {
     try {
-      const data = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ input })
-      });
-      setTitle(
-        await data.json().title
-      );
+      axios.post(url, { url: input })
+        .then(res => {
+          const data = JSON.parse(res.data.body);
+          setTitle(data.title);
+        })
+        .catch(err => {
+          console.log(err);
+        });
     } catch (err) {
       console.log(err);
     }
